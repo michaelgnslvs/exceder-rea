@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <title>Exceder Real Estate Advisors, LLC</title>
-    <!--    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />-->
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/bootstrap.css" rel="stylesheet"/>
     <link href="css/custom.css" rel="stylesheet"/>
@@ -120,12 +124,9 @@
         <path stroke="#000" stroke-opacity=".5" stroke-width=".2"
               d="m26.802-2.8376-5.9562 15.127a4.3418 7.1877 67.546 0 1 1.8769-0.39171l4.0793-14.736zm8.8635 7.8905-10.045 7.0161a4.3418 7.1877 67.546 0 1 0.97823 0.37827l9.0671-7.3944zm-22.804 2.5601 4.3605 6.5061a4.3418 7.1877 67.546 0 1 1.0764-0.72502l-5.4369-5.781zm30.034 6.6632-14.706 0.17208a4.3418 7.1877 67.546 0 1-0.093535 1.4893l14.799-1.6614zm-28.198 3.1657-14.799 1.6614 14.705-0.17157a4.3418 7.1877 67.546 0 1 0.093534-1.4898zm10.878 1.8247a4.3418 7.1877 67.546 0 1-1.079 0.71985l5.4353 5.7805-4.3563-6.5004zm-9.3808 1.665-9.0671 7.3954 10.045-7.0171a4.3418 7.1877 67.546 0 1-0.97824-0.37827zm5.7506 0.16485a4.3418 7.1877 67.546 0 1-1.8774 0.39222l-4.0768 14.728 5.9542-15.121z"
               fill="#fff"/>
-        <text transform="scale(.89666 1.1152)" x="50.740181" y="18.642" fill="#000000" font-family="'BankGothic Md BT'"
-              font-size="17.82px" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.485"
-              style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;paint-order:markers fill stroke"
-              xml:space="preserve"><tspan x="50.740181" y="18.642" fill="#000000" font-family="'BankGothic Md BT'" font-size="17.82px" stroke-width="1.485" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Exceder</tspan></text>
-        <text transform="scale(.87375 1.1445)" x="53.634624" y="23.529253" fill="#000000"
-              font-family="'BankGothic Md BT'" font-size="6.4255px" stroke-linecap="round" stroke-linejoin="round"
+        <text transform="scale(.89666 1.1152)" x="50.740181" y="18.642" fill="currentColor" font-family="'BankGothic'" font-size="17.82px" stroke-width="1.485" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Exceder</text>
+        <text transform="scale(.87375 1.1445)" x="53.634624" y="23.529253" fill="currentColor"
+              font-family="'BankGothic'" font-size="6.4255px" stroke-linecap="round" stroke-linejoin="round"
               stroke-width=".53546"
               style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;paint-order:markers fill stroke"
               xml:space="preserve"><tspan x="53.634624" y="23.529253" stroke-width=".53546">Real Estate Advisors, LLC</tspan></text>
@@ -165,9 +166,62 @@
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             </ul>
         </div>
+        <!-- Theme Switch -->
+        <div class="nav-item dropdown d-lg-flex col-lg-3 justify-content-lg-end">
+            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                    id="bd-theme"
+                    type="button"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    aria-label="Toggle theme (auto)">
+                <svg class="bi my-1 theme-icon-active">
+                    <use href="#circle-half"></use>
+                </svg>
+                <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="light" aria-pressed="false">
+                        <svg class="bi me-2 opacity-50 theme-icon">
+                            <use href="#sun-fill"></use>
+                        </svg>
+                        Light
+                        <svg class="bi ms-auto d-none">
+                            <use href="#check2"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="dark" aria-pressed="false">
+                        <svg class="bi me-2 opacity-50 theme-icon">
+                            <use href="#moon-stars-fill"></use>
+                        </svg>
+                        Dark
+                        <svg class="bi ms-auto d-none">
+                            <use href="#check2"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center active"
+                            data-bs-theme-value="auto" aria-pressed="true">
+                        <svg class="bi me-2 opacity-50 theme-icon">
+                            <use href="#circle-half"></use>
+                        </svg>
+                        Auto
+                        <svg class="bi ms-auto d-none">
+                            <use href="#check2"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
-<header id="page-top" class="bg-primary text-white">
+<header id="page-top" class="text-white" style="background-color: #400c0c">
     <div class="container px-4 text-center">
         <svg role="img" width="800" height="280" class="fx-mirror img-fluid">
             <!--            <g transform="scale(1 -1) scale(1 .3) translate(-265 -1010)">-->
@@ -201,9 +255,6 @@
 </header>
 <main class="bg-secondary-subtle">
     <div class="section-divider"></div>
-    <!--    <div class="text-center py-4">-->
-    <!--        <h1>Services and Experience</h1>-->
-    <!--    </div>-->
     <!--CMBS-->
     <section class="bg-body-tertiary" id="cmbs">
         <div class="container px-4">
@@ -231,7 +282,7 @@
             </div>
         </div>
     </section>
-    <!--    <div class="section-divider"></div>-->
+
     <!--Mezzanine-->
     <section class="bg-body-secondary" id="mezzanine">
         <div class="container px-4">
@@ -259,7 +310,7 @@
             </div>
         </div>
     </section>
-    <!--    <div class="section-divider"></div>-->
+
     <!--Loan Portfolios-->
     <section class="bg-body-tertiary" id="portfolios">
         <div class="container px-4">
@@ -290,7 +341,7 @@
             </div>
         </div>
     </section>
-    <!--    <div class="section-divider"></div>-->
+
     <!--Structured Loans-->
     <section class="bg-body-secondary" id="structured">
         <div class="container px-4">
@@ -319,6 +370,7 @@
         </div>
     </section>
     <div class="section-divider"></div>
+
     <!--Consulting Services-->
     <section class="bg-body-tertiary" id="services">
         <div class="container px-4">
@@ -350,6 +402,7 @@
         </div>
     </section>
     <div class="section-divider"></div>
+
     <!--Case Studies-->
     <section class="bg-body-tertiary" id="case-studies">
         <div class="container px-4">
@@ -383,7 +436,8 @@
                             </p>
                         </div>
                         <div class="align-self-end text-center d-grid gap-2">
-                            <a href="#" class="btn btn-primary">
+                            <a data-bs-toggle="offcanvas" data-bs-target="#ocCaseStudy1" aria-controls="ocCaseStudy1"
+                               class="btn btn-primary">
                                 Primary button
                             </a>
                         </div>
@@ -435,6 +489,7 @@
         </div>
     </section>
     <div class="section-divider"></div>
+
     <!--About-->
     <section class="bg-body-tertiary" id="about">
         <div class="container px-4">
@@ -490,7 +545,60 @@
             </div>
         </div>
     </section>
+
+    <!-- Visual gap at bottom of page -->
     <div class="section-divider"></div>
+
+    <!-- Offcanvas Blocks -->
+    <!-- Case Studies Offcanvas: CMBS -->
+    <div class="offcanvas h-auto offcanvas-bottom" tabindex="-1" id="ocCaseStudy1"
+         aria-labelledby="ocCMBS" style="max-height: 75%">
+        <div class="container-fluid">
+            <div class="row d-flex align-self-center">
+                <div class="col-12 mx-auto">
+                    <div class="offcanvas-header">
+                        <h2 class="offcanvas-title w-100 text-center" id="ocCMBS">
+                            Managing Partners</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-3 w-auto px-4">
+                        <a data-bs-toggle="offcanvas"
+                           data-bs-target="#ocPhil" aria-controls="ocPhil">
+                            <figure class="figure" style="max-width: 250px;">
+                                <img class="rounded-circle figure-img img-thumbnail"
+                                     src="https://dummyimage.com/500/d3d3d3/fff.png">
+                                <!--                                <img class="rounded-circle figure-img img-thumbnail center-cropped"-->
+                                <!--                                     src="/assets/images/Gonsalves100.png">-->
+                                <figcaption class="figure-caption"><h4>Philip Gonsalves</h4>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- Force next columns to break to new line below md breakpoint -->
+                    <div class="w-100 d-block d-md-none"></div>
+                    <div class="col-3 w-auto px-4">
+
+                        <figure class="figure" style="max-width: 250px;">
+                            <img class="rounded-circle figure-img img-thumbnail"
+                                 src="https://dummyimage.com/500/d3d3d3/fff.png">
+                            <figcaption class="figure-caption"><h4>New Partner</h4></figcaption>
+                        </figure>
+                    </div>
+                    <!-- Force next columns to break to new line below md breakpoint -->
+                    <div class="w-100 d-block d-md-none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Managing Partners "Directory" offcanvas -->
     <div class="offcanvas h-auto offcanvas-bottom" tabindex="-1" id="offcanvasPartners"
          aria-labelledby="offcanvasPartnerLabel" style="max-height: 75%">
         <div class="container-fluid">
@@ -502,13 +610,6 @@
                     </div>
                 </div>
             </div>
-            <!--            <div class="row gx-4 text-center">-->
-            <!--                <div class="col-1"></div>-->
-            <!--                <div class="col-10">-->
-            <!--                    <p class="lead w-100 text-center">Click a portrait to read partner's bio</p>-->
-            <!--                </div>-->
-            <!--                <div class="col-1"></div>-->
-            <!--            </div>-->
         </div>
         <div class="offcanvas-body">
             <div class="container text-center">
@@ -517,8 +618,10 @@
                         <a data-bs-toggle="offcanvas"
                            data-bs-target="#ocPhil" aria-controls="ocPhil">
                             <figure class="figure" style="max-width: 250px;">
-                                <img class="rounded-circle figure-img img-thumbnail center-cropped"
-                                     src="/assets/images/Gonsalves100.png">
+                                <img class="rounded-circle figure-img img-thumbnail"
+                                     src="https://dummyimage.com/500/d3d3d3/fff.png">
+                                <!--                                <img class="rounded-circle figure-img img-thumbnail center-cropped"-->
+                                <!--                                     src="/assets/images/Gonsalves100.png">-->
                                 <figcaption class="figure-caption"><h4>Philip Gonsalves</h4></figcaption>
                             </figure>
                         </a>
@@ -539,23 +642,21 @@
             </div>
         </div>
     </div>
-    <!-- TODO - Add Back Button to Partner offcanvas -->
     <div class="offcanvas h-100 offcanvas-bottom" tabindex="-2" id="ocPhil"
          aria-labelledby="ocPhilLabel">
-        <div class="offcanvas-header bg-gradient bg-exceder">
-            <svg role="img" stroke="#fff" stroke-opacity=".5" stroke-width=".5" height="69" width="69">
+        <div class="offcanvas-header bg-exceder">
+            <svg role="img" stroke="#000" stroke-opacity=".5" stroke-width="1" height="69" width="69">
                 <use href="#compass-logo"></use>
             </svg>
-            <h4 class="offcanvas-title" id="ocPhilLabel">Philip Gonsalves</h4>
+            <h3 class="offcanvas-title" id="ocPhilLabel">Philip Gonsalves</h3>
             <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPartners"
-                    aria-controls="offcanvasPartners" aria-labelledby="Back" style="color: #fff;">
+                    aria-controls="offcanvasPartners" aria-label="Back" style="color: #fff;">
                 <i class="bi-arrow-return-left">&nbsp;Back</i>
             </button>
-            <!--            <button type="button" class=" btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
         </div>
         <div class="offcanvas-body">
             <p>
-                Philip Gonsalves is the founder and Managing Partner of Exceder Real Estate Advisors,
+                <strong>Philip Gonsalves</strong> is the founder and Managing Partner of Exceder Real Estate Advisors,
                 LLC, an independent third-party commercial real estate underwriting, due diligence and
                 consulting firm. Phil has over 30 years of commercial real estate underwriting, analysis
                 and valuation experience.
@@ -593,103 +694,8 @@
             </p>
         </div>
     </div>
-    <!--    <div class="offcanvas w-75 offcanvas-end" tabindex="-1" id="offcanvasPartners"-->
-    <!--         aria-labelledby="offcanvasLabel">-->
-    <!--        <div class="offcanvas-header">-->
-    <!--            <h5 class="offcanvas-title" id="offcanvasLabel">Managing Partners</h5>-->
-    <!--            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
-    <!--        </div>-->
-    <!--        <div class="offcanvas-body">-->
-    <!--            <div class="accordion" id="partnerAccordion">-->
-    <!--                <div class="accordion-item">-->
-    <!--                    <span class="accordion-header" id="headingOne">-->
-    <!--                        <button class="accordion-button" type="button" data-bs-toggle="collapse"-->
-    <!--                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
-    <!--                            <div class="col-sm-4 col-md-1">-->
-    <!--                                <img class="rounded-circle img-fluid"-->
-    <!--                                     src="https://dummyimage.com/500/d3d3d3/fff.png">-->
-    <!--                            </div>-->
-    <!--                            <div class="col-8 px-4">-->
-    <!--                                <h4>Philip Gonsalves</h4>-->
-    <!--                                <span>(860) 875-8383</span>-->
-    <!--                                <span><a href="mailto:phil@excederrea.com">phil@excederrea.com</a></span>-->
-    <!--                            </div>-->
-    <!--                        </button>-->
-    <!--                    </span>-->
-    <!--                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"-->
-    <!--                         data-bs-parent="#partnerAccordion">-->
-    <!--                        <div class="accordion-body">-->
-    <!--                            <p>-->
-    <!--                                Philip Gonsalves is the founder and Managing Partner of Exceder Real Estate Advisors,-->
-    <!--                                LLC, an independent third-party commercial real estate underwriting, due diligence and-->
-    <!--                                consulting firm. Phil has over 30 years of commercial real estate underwriting, analysis-->
-    <!--                                and valuation experience.-->
-    <!--                            </p>-->
-    <!--                            <p>-->
-    <!--                                Over the course of his career, Phil has managed hundreds of engagements for various-->
-    <!--                                clients including projects for investment banks, commercial banks, private equity real-->
-    <!--                                estate funds and various other commercial real estate debt investors.-->
-    <!--                            </p>-->
-    <!--                            <p>-->
-    <!--                                He has provided loan valuation, strategic analysis and consulting services to portfolio-->
-    <!--                                lenders and CMBS investors, as well as directly underwriting numerous loans for the CMBS-->
-    <!--                                market.-->
-    <!--                            </p>-->
-    <!--                            <p>-->
-    <!--                                Phil has extensive experience analyzing all types of commercial real estate and debt-->
-    <!--                                including mezzanine loans and highly structured, multi-tranche transactions.-->
-    <!--                            </p>-->
-    <!--                            <p>-->
-    <!--                                Prior to founding Exceder, Phil was with McCary Stevens Associates, Inc. for over 10-->
-    <!--                                years as a Senior Project Manager and Principal providing loan underwriting, due-->
-    <!--                                diligence and commercial real estate consulting services. Prior to McCary Stevens, he-->
-    <!--                                worked on CMBS loan origination and underwriting for QuestCap and Paine Webber.-->
-    <!--                            </p>-->
-    <!--                            <p>-->
-    <!--                                Phil also has commercial banking experience with CenterBank as a Vice President in the-->
-    <!--                                Credit Administration Department and with RECOLL Management/Fleet Financial Group as-->
-    <!--                                Vice President and Manager of the appraisal and valuation department in Hartford, CT.-->
-    <!--                                RECOLL was responsible for working out loans for the FDIC related to failure of Bank of-->
-    <!--                                New England. Phil’s commercial real estate career started with a regional commercial-->
-    <!--                                appraisal firm in 1985.-->
-    <!--                            </p>-->
-    <!--                            <p>-->
-    <!--                                Phil is a graduate of Boston College with a Bachelor of Arts degree in History.-->
-    <!--                            </p>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div class="accordion-item">-->
-    <!--                    <h2 class="accordion-header" id="headingTwo">-->
-    <!--                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"-->
-    <!--                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
-    <!--                            <div class="col-sm-4 col-md-1">-->
-    <!--                                <img class="rounded-circle img-fluid"-->
-    <!--                                     src="https://dummyimage.com/500/d3d3d3/fff.png">-->
-    <!--                            </div>-->
-    <!--                            <div class="col-8 px-4">-->
-    <!--                                <h4>Other Partner</h4>-->
-    <!--                                <span>(123) 456-7890</span>-->
-    <!--                                <span><a href="mailto:phil@excederrea.com">phil@excederrea.com</a></span>-->
-    <!--                            </div>-->
-    <!--                        </button>-->
-    <!--                    </h2>-->
-    <!--                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"-->
-    <!--                         data-bs-parent="#partnerAccordion">-->
-    <!--                        <div class="accordion-body">-->
-    <!--                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until-->
-    <!--                            the collapse plugin adds the appropriate classes that we use to style each element. These-->
-    <!--                            classes control the overall appearance, as well as the showing and hiding via CSS-->
-    <!--                            transitions. You can modify any of this with custom CSS or overriding our default variables.-->
-    <!--                            It's also worth noting that just about any HTML can go within the-->
-    <!--                            <code>.accordion-body</code>, though the transition does limit overflow.-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
 </main>
+
 <!-- Footer-->
 <footer class="py-5" style="background-color: #820000">
     <div class="container px-4">
@@ -703,9 +709,13 @@
             Copyright &copy; Exceder Real Estate Advisors, LLC 2023
         </p></div>
 </footer>
+
+<!-- JS Includes -->
 <!-- Bootstrap core JS-->
 <script src="js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/ScrollinOnePage.js"></script>
+<!-- Theme Switch -->
+<script src="js/themeswitcher.js"></script>
 </body>
 </html>

@@ -51,10 +51,10 @@ section {
     box-shadow: inset 0 .5em .5em rgba(0, 0, 0, .25);
 }
 
-.fx-mirror {
-    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
-}
+/*.fx-mirror {*/
+/*    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);*/
+/*    -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);*/
+/*}*/
 
 h1, h2, h3, h4, h5, h6 {
     font-family: BankGothic;
@@ -65,4 +65,9 @@ h1, h2, h3, h4, h5, h6 {
     object-position: top; /* Center the image within the element */
     height: 250px;
     width: 250px;
+}
+
+.bi {
+    height: 1em;
+    width: 1em;
 }
