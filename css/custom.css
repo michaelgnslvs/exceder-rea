@@ -1,0 +1,68 @@
+/* Webfont loading */
+@font-face {
+    font-family: 'BankGothic';
+    src: url('../fonts/bankgothic.eot');
+    src: url('../fonts/bankgothic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/bankgothic.woff') format('woff'),
+    url('../fonts/bankgothic.ttf') format('truetype'),
+    url('../fonts/bankgothic.svg#webfont') format('svg');
+}
+
+/* Theme Customization */
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #820000;
+}
+
+.nav-link {
+    padding: 5px;
+}
+
+#navbarResponsive {
+    padding: 10px;
+}
+
+.bg-exceder {
+    background-color: #820000 !important;
+    color: #fff !important;
+}
+
+.btn-primary {
+    --bs-btn-bg: #820000;
+    --bs-btn-border-color: #820000;
+}
+
+html {
+    scroll-padding-top: 3.5rem;
+}
+
+header {
+    padding-top: 9.5rem;
+    padding-bottom: 6rem;
+}
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.section-divider {
+    width: 100%;
+    height: 4rem;
+    box-shadow: inset 0 .5em .5em rgba(0, 0, 0, .25);
+}
+
+.fx-mirror {
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: BankGothic;
+}
+
+.center-cropped {
+    object-fit: cover; /* Do not scale the image */
+    object-position: top; /* Center the image within the element */
+    height: 250px;
+    width: 250px;
+}

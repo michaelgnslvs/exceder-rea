@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Exceder Real Estate Advisors, LLC</title>
+    <!--    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />-->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/custom.css" rel="stylesheet"/>
+    <link href="assets/icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+<!-- SVG Definitions -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </symbol>
+    <symbol id="book-half" viewBox="0 0 16 16">
+        <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+    </symbol>
+    <symbol id="box-seam" viewBox="0 0 16 16">
+        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+    </symbol>
+    <symbol id="braces" viewBox="0 0 16 16">
+        <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
+    </symbol>
+    <symbol id="braces-asterisk" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6ZM14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6ZM7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5h-1Z"/>
+    </symbol>
+    <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+    </symbol>
+    <symbol id="chevron-expand" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z"/>
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+    </symbol>
+    <symbol id="clipboard" viewBox="0 0 16 16">
+        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+    </symbol>
+    <symbol id="code" viewBox="0 0 16 16">
+        <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+    </symbol>
+    <symbol id="file-earmark-richtext" viewBox="0 0 16 16">
+        <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+        <path d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208zM6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"/>
+    </symbol>
+    <symbol id="globe2" viewBox="0 0 16 16">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+    </symbol>
+    <symbol id="grid-fill" viewBox="0 0 16 16">
+        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+    </symbol>
+    <symbol id="lightning-charge-fill" viewBox="0 0 16 16">
+        <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+    </symbol>
+    <symbol id="list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    </symbol>
+    <symbol id="magic" viewBox="0 0 16 16">
+        <path d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0v1.829Zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707L14 2.707ZM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707L7.293 4Zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1h1.829Zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1h1.829ZM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707L13.293 10ZM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0v1.829Zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0L8.354 9.06Z"/>
+    </symbol>
+    <symbol id="menu-button-wide-fill" viewBox="0 0 16 16">
+        <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+    </symbol>
+    <symbol id="palette2" viewBox="0 0 16 16">
+        <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a2.99 2.99 0 0 1-2.121-.879A2.99 2.99 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188v5.647zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zM15 15v-4H9.258l-4.015 4H15zM0 .5v12.495V.5z"/>
+        <path d="M0 12.995V13a3.07 3.07 0 0 0 0-.005z"/>
+    </symbol>
+    <symbol id="plugin" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 1 2.898 5.673c-.167-.121-.216-.406-.002-.62l1.8-1.8a3.5 3.5 0 0 0 4.572-.328l1.414-1.415a.5.5 0 0 0 0-.707l-.707-.707 1.559-1.563a.5.5 0 1 0-.708-.706l-1.559 1.562-1.414-1.414 1.56-1.562a.5.5 0 1 0-.707-.706l-1.56 1.56-.707-.706a.5.5 0 0 0-.707 0L5.318 5.975a3.5 3.5 0 0 0-.328 4.571l-1.8 1.8c-.58.58-.62 1.6.121 2.137A8 8 0 1 0 0 8a.5.5 0 0 0 1 0Z"/>
+    </symbol>
+    <symbol id="plus" viewBox="0 0 16 16">
+        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+    </symbol>
+    <symbol id="three-dots" viewBox="0 0 16 16">
+        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+    </symbol>
+    <symbol id="tools" viewBox="0 0 16 16">
+        <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+    </symbol>
+    <symbol id="ui-radios" viewBox="0 0 16 16">
+        <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zM0 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm7-1.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM3 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+    </symbol>
+    <symbol id="compass-logo" viewBox="0 0 87.385 79.375">
+        <path d="m72.965 39.848a21.034 34.821 67.546 0 1-44.78 20.363 21.034 34.821 67.546 0 1-13.968-26.36 21.034 34.821 67.546 0 1 44.78-20.363 21.034 34.821 67.546 0 1 13.968 26.36z"
+              fill="#820000"/>
+        <path d="m53.699 15.711a18.878 31.253 67.546 0 0-15.372 2.9428l1.966 3.7097a14.726 24.378 67.546 0 1 10.671-1.9936l3.0683-4.6523a18.878 31.253 67.546 0 0-0.33353-0.0068zm6.8805 0.67466-3.0683 4.6532a14.726 24.378 67.546 0 1 6.8615 3.7828l6.3019-2.8668a18.878 31.253 67.546 0 0-10.095-5.5692zm-29.31 5.4771a18.878 31.253 67.546 0 0-12.114 9.7141l5.8515 0.59769a14.726 24.378 67.546 0 1 8.2289-6.6012zm41.606 4.2475-6.3028 2.8659a14.726 24.378 67.546 0 1-0.96542 7.3423l5.8505 0.59769a18.878 31.253 67.546 0 0 1.4177-10.806zm-57.153 10.673a18.878 31.253 67.546 0 0-1.4177 10.807l6.3009-2.8659a14.726 24.378 67.546 0 1 0.96732-7.3433zm46.452 4.7425a14.726 24.378 67.546 0 1-8.2299 6.6021l1.9689 3.7173a18.878 31.253 67.546 0 0 12.118-9.7217zm-39.369 7.3528-6.3009 2.8649a18.878 31.253 67.546 0 0 10.096 5.5711l3.0683-4.6523a14.726 24.378 67.546 0 1-6.8634-3.7838zm24.081 2.4592a14.726 24.378 67.546 0 1-10.672 1.9936l-3.0711 4.657a18.878 31.253 67.546 0 0 15.713-2.9343z"
+              fill="#fff"/>
+        <path d="m54.336-1.9652-8.1034 29.278a8.6302 14.287 67.546 0 1 3.5273-0.05957zm17.617 15.685-18.019 14.695a8.6302 14.287 67.546 0 1 1.4637 1.021zm-45.33 5.0887 10.804 11.487a8.6302 14.287 67.546 0 1 2.4919-1.2614zm59.7 13.244-29.398 3.3003a8.6302 14.287 67.546 0 1-1.2819 2.7272 8.6302 14.287 67.546 0 1-0.27015 0.39238zm-54.508 3.175-30.956 6.4199 29.398-3.3003a8.6302 14.287 67.546 0 1 1.2819-2.7282 8.6302 14.287 67.546 0 1 0.27631-0.39136zm17.939 8.1764a8.6302 14.287 67.546 0 1-2.493 1.2624l13.296 10.227zm-17.97 0.85975-16.556 15.718 18.02-14.697a8.6302 14.287 67.546 0 1-1.4637-1.021zm9.1666 2.1252a8.6302 14.287 67.546 0 1-3.5284 0.06061l-4.574 29.214z"
+              fill="#820000"/>
+        <path d="m54.335-1.9652-11.839 30.069a8.6302 14.287 67.546 0 1 3.7307-0.7786zm17.618 15.684-19.967 13.946a8.6302 14.287 67.546 0 1 1.9445 0.7519zm-45.329 5.0887 8.6674 12.932a8.6302 14.287 67.546 0 1 2.1396-1.4411zm59.699 13.244-29.231 0.34205a8.6302 14.287 67.546 0 1-0.18591 2.9603zm-56.049 6.2925-29.415 3.3024 29.23-0.34102a8.6302 14.287 67.546 0 1 0.18591-2.9614zm21.623 3.627a8.6302 14.287 67.546 0 1-2.1448 1.4309l10.804 11.49zm-18.646 3.3096-18.023 14.7 19.967-13.948a8.6302 14.287 67.546 0 1-1.9445-0.7519zm11.43 0.32767a8.6302 14.287 67.546 0 1-3.7318 0.77963l-8.1034 29.276z"
+              fill="#fff"/>
+    </symbol>
+    <symbol id="logo" viewBox="0 0 132.29 45.244">
+        <path stroke="#000" stroke-opacity=".25" stroke-width="1"
+              d="m36.175 18.198a10.582 17.518 67.546 0 1-22.528 10.245 10.582 17.518 67.546 0 1-7.0274-13.262 10.582 17.518 67.546 0 1 22.528-10.245 10.582 17.518 67.546 0 1 7.0274 13.262z"
+              fill="#820000"/>
+        <path stroke="#000" stroke-opacity=".5" stroke-width=".5"
+              d="m26.482 6.0548a9.4975 15.723 67.546 0 0-7.7333 1.4805l0.98908 1.8663a7.4085 12.265 67.546 0 1 5.3684-1.0029l1.5436-2.3405a9.4975 15.723 67.546 0 0-0.16779-0.00335zm3.4615 0.33941-1.5436 2.341a7.4085 12.265 67.546 0 1 3.452 1.9031l3.1704-1.4423a9.4975 15.723 67.546 0 0-5.0787-2.8018zm-14.745 2.7555a9.4975 15.723 67.546 0 0-6.0946 4.8871l2.9438 0.30069a7.4085 12.265 67.546 0 1 4.1399-3.321zm20.932 2.1369-3.1709 1.4418a7.4085 12.265 67.546 0 1-0.48569 3.6939l2.9433 0.30069a9.4975 15.723 67.546 0 0 0.71324-5.4363zm-28.753 5.3694a9.4975 15.723 67.546 0 0-0.71324 5.4368l3.1699-1.4418a7.4085 12.265 67.546 0 1 0.48665-3.6943zm23.37 2.3859a7.4085 12.265 67.546 0 1-4.1403 3.3215l0.99051 1.8701a9.4975 15.723 67.546 0 0 6.0965-4.8909zm-19.806 3.6991-3.1699 1.4413a9.4975 15.723 67.546 0 0 5.0792 2.8028l1.5436-2.3405a7.4085 12.265 67.546 0 1-3.4529-1.9036zm12.115 1.2372a7.4085 12.265 67.546 0 1-5.3689 1.0029l-1.545 2.3429a9.4975 15.723 67.546 0 0 7.905-1.4762z"
+              fill="#fff"/>
+        <path stroke="#fff" stroke-opacity=".5" stroke-width=".2"
+              d="m26.802-2.8381-4.0768 14.729a4.3418 7.1877 67.546 0 1 1.7746-0.029972l2.3022-14.699zm8.863 7.891-9.0651 7.3928a4.3418 7.1877 67.546 0 1 0.73639 0.51366l8.3287-7.9065zm-22.805 2.5601 5.4353 5.779a4.3418 7.1877 67.546 0 1 1.2537-0.63459l-6.689-5.1444zm30.034 6.6632-14.79 1.6604a4.3418 7.1877 67.546 0 1-0.64492 1.372 4.3418 7.1877 67.546 0 1-0.13591 0.1974l15.571-3.2298zm-27.423 1.5973-15.574 3.2298 14.79-1.6604a4.3418 7.1877 67.546 0 1 0.64492-1.3725 4.3418 7.1877 67.546 0 1 0.13901-0.19689zm9.0248 4.1134a4.3418 7.1877 67.546 0 1-1.2542 0.6351l6.689 5.1449-5.4348-5.78zm-9.0403 0.43253-8.3292 7.9075 9.0656-7.3939a4.3418 7.1877 67.546 0 1-0.73639-0.51366zm4.6116 1.0692a4.3418 7.1877 67.546 0 1-1.7751 0.030489l-2.3012 14.697 4.0762-14.728z"
+              fill="#820000"/>
+        <path stroke="#000" stroke-opacity=".5" stroke-width=".2"
+              d="m26.802-2.8376-5.9562 15.127a4.3418 7.1877 67.546 0 1 1.8769-0.39171l4.0793-14.736zm8.8635 7.8905-10.045 7.0161a4.3418 7.1877 67.546 0 1 0.97823 0.37827l9.0671-7.3944zm-22.804 2.5601 4.3605 6.5061a4.3418 7.1877 67.546 0 1 1.0764-0.72502l-5.4369-5.781zm30.034 6.6632-14.706 0.17208a4.3418 7.1877 67.546 0 1-0.093535 1.4893l14.799-1.6614zm-28.198 3.1657-14.799 1.6614 14.705-0.17157a4.3418 7.1877 67.546 0 1 0.093534-1.4898zm10.878 1.8247a4.3418 7.1877 67.546 0 1-1.079 0.71985l5.4353 5.7805-4.3563-6.5004zm-9.3808 1.665-9.0671 7.3954 10.045-7.0171a4.3418 7.1877 67.546 0 1-0.97824-0.37827zm5.7506 0.16485a4.3418 7.1877 67.546 0 1-1.8774 0.39222l-4.0768 14.728 5.9542-15.121z"
+              fill="#fff"/>
+        <text transform="scale(.89666 1.1152)" x="50.740181" y="18.642" fill="#000000" font-family="'BankGothic Md BT'"
+              font-size="17.82px" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.485"
+              style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;paint-order:markers fill stroke"
+              xml:space="preserve"><tspan x="50.740181" y="18.642" fill="#000000" font-family="'BankGothic Md BT'" font-size="17.82px" stroke-width="1.485" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Exceder</tspan></text>
+        <text transform="scale(.87375 1.1445)" x="53.634624" y="23.529253" fill="#000000"
+              font-family="'BankGothic Md BT'" font-size="6.4255px" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width=".53546"
+              style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;paint-order:markers fill stroke"
+              xml:space="preserve"><tspan x="53.634624" y="23.529253" stroke-width=".53546">Real Estate Advisors, LLC</tspan></text>
+    </symbol>
+    <symbol id="exceder-bullet" viewBox="0 0 87.385 79.375">
+        <g transform="translate(.10129 2.8381)">
+            <path d="m54.335-1.9653-6.2317 15.827a21.034 34.821 67.546 0 0-19.104 6.7737l-2.3683-1.8211-0.006202-0.006718 0.002584 0.003618-0.003617-0.002584 0.006201 0.006201 1.542 2.3012a21.034 34.821 67.546 0 0-13.955 12.735 21.034 34.821 67.546 0 0-2.79 5.6053l-10.557 2.1895-0.010852 0.001033h0.0051676l-0.0051676 0.001034 0.010335-0.001034 9.9642-0.11627a21.034 34.821 67.546 0 0 7.2626 15.729l-2.8598 2.7151-0.003617 0.0031-0.004134 0.004134 0.008785-0.007234 3.4458-2.4071a21.034 34.821 67.546 0 0 9.5028 2.6438 21.034 34.821 67.546 0 0 7.0709 0.07028l-2.4055 15.365-0.004651 0.017053 0.003617-0.008785-0.00155 0.008785 0.004651-0.01757 6.2239-15.805a21.034 34.821 67.546 0 0 19.11-6.7706l2.3699 1.8226-1.9451-2.0686a21.034 34.821 67.546 0 0 5.17e-4 -5.17e-4l1.9446 2.0681-1.5441-2.3043a21.034 34.821 67.546 0 0 13.953-12.74 21.034 34.821 67.546 0 0 2.789-5.6022l10.569-2.1926-10.233 1.1488a21.034 34.821 67.546 0 0 5.17e-4 -0.001034l10.233-1.1488-9.9751 0.11679a21.034 34.821 67.546 0 0-7.2605-15.729l2.8649-2.7197-3.1512 2.5699a21.034 34.821 67.546 0 0-5.17e-4 -5.17e-4l3.1517-2.5704-3.4541 2.4123a21.034 34.821 67.546 0 0-9.5023-2.6438 21.034 34.821 67.546 0 0-4.1434-0.19069 21.034 34.821 67.546 0 0-2.928 0.13229l2.4107-15.394-4.3098 15.571a21.034 34.821 67.546 0 0-0.002067 5.17e-4l4.3108-15.572zm-0.63562 17.676a18.878 31.253 67.546 0 1 0.33331 0.006718l-3.068 4.6524a14.726 24.378 67.546 0 0-0.12764 0.006718l0.71779-4.5842a18.878 31.253 67.546 0 1 2.1446-0.081649zm-4.3357 0.28215a18.878 31.253 67.546 0 1 0.002067 0l-1.2707 4.5904a14.726 24.378 67.546 0 0-0.002584 5.16e-4l1.2712-4.5909zm-2.2247 0.31781-1.8552 4.7119a14.726 24.378 67.546 0 0-4.9904 1.341l-1.9658-3.7099a18.878 31.253 67.546 0 1 8.8113-2.343zm13.441 0.074931a18.878 31.253 67.546 0 1 5.0726 1.7343l-5.4679 3.8194a14.726 24.378 67.546 0 0-2.6727-0.90072l3.068-4.6529zm5.6338 2.0143a18.878 31.253 67.546 0 1 5.17e-4 5.17e-4l-4.9718 4.055a14.726 24.378 67.546 0 0-0.001034-5.17e-4l4.9723-4.055zm0.50953 0.28525a18.878 31.253 67.546 0 1 3.9522 3.2696l-6.3019 2.867a14.726 24.378 67.546 0 0-2.2019-1.8159l4.5517-4.3207zm-35.453 3.1776 0.46457 0.87695-0.85059-0.65422a18.878 31.253 67.546 0 1 0.38602-0.22273zm-1.8707 1.0847 2.3637 3.5269a14.726 24.378 67.546 0 0-6.7557 5.6999l-5.8518-0.5979a18.878 31.253 67.546 0 1 10.244-8.6289zm43.477 3.1626a18.878 31.253 67.546 0 1 0.1912 6.0968l-6.3335 0.074414a14.726 24.378 67.546 0 0-0.1602-3.3052l6.3025-2.866zm-24.621 1.0532a8.6159 14.042 66.472 0 1 3.1946 0.36328 8.6159 14.042 66.472 0 1 2.9032 11.95 8.6159 14.042 66.472 0 1-18.621 6.6957 8.6159 14.042 66.472 0 1-2.9032-11.95 8.6159 14.042 66.472 0 1 15.426-7.059zm24.487 6.4136a18.878 31.253 67.546 0 1 0 0.001033l-6.411 0.71985a14.726 24.378 67.546 0 0 5.16e-4 -0.00155l6.4105-0.71934zm-0.45372 1.3875a18.878 31.253 67.546 0 1-0.82941 1.9518l-5.748-0.58756 6.5774-1.3643zm-56.565 1.8185 5.7573 0.58859-6.5877 1.3658a18.878 31.253 67.546 0 1 0.83044-1.9544zm4.7237 4.6359a14.726 24.378 67.546 0 0 0.15916 3.3052l-6.3009 2.866a18.878 31.253 67.546 0 1-0.1912-6.0973l6.3329-0.073898zm41.729 0.10697 5.857 0.59738a18.878 31.253 67.546 0 1-10.246 8.6367l-2.3678-3.5331a14.726 24.378 67.546 0 0 6.7572-5.7009zm-8.0724 6.505a14.726 24.378 67.546 0 0 5.17e-4 0l2.9621 3.1497a18.878 31.253 67.546 0 1-5.17e-4 5.16e-4l-2.9621-3.1502zm-31.296 0.84749a14.726 24.378 67.546 0 0 2.203 1.8164l-4.5501 4.3202a18.878 31.253 67.546 0 1-3.9538-3.2716l6.3009-2.8649zm32.641 2.0867 0.85369 0.65629a18.878 31.253 67.546 0 1-0.38757 0.22376l-0.46612-0.88005zm-8.5602 0.37259 1.9699 3.7161a18.878 31.253 67.546 0 1-8.8175 2.3389l1.8562-4.7139a14.726 24.378 67.546 0 0 4.9914-1.341zm-19.893 0.42323a14.726 24.378 67.546 0 0 2.6753 0.90124l-3.068 4.6524a18.878 31.253 67.546 0 1-5.0731-1.7353l5.4658-3.8184zm9.3503 1.5637-0.71675 4.5785a18.878 31.253 67.546 0 1-2.4831 0.085266l3.0711-4.6571a14.726 24.378 67.546 0 0 0.12867-0.006718z"/>
+        </g>
+    </symbol>
+</svg>
+
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container px-4">
+        <!--        <a class="navbar-brand" href="#page-top">-->
+        <!--            <svg role="img" width="100" height="100">-->
+        <!--                <use href="#compass-logo"></use>-->
+        <!--            </svg>-->
+        <!--        </a>-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>&nbsp;<span style="font-family: BankGothic">Exceder</span>
+            <!--            <svg role="img" width="100" height="100">-->
+            <!--                <use href="#compass-logo"></use>-->
+            <!--            </svg>-->
+        </button>
+        <!--        <a class="d-md-none btn btn-sm btn-outline-secondary" href="#page-top" >Top</a>-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav nav-pills ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cmbs">CMBS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#mezzanine">Mezzanine</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolios">Loan Portfolios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#structured">Structured Loans</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Consulting Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header id="page-top" class="bg-primary text-white">
+    <div class="container px-4 text-center">
+        <svg role="img" width="800" height="280" class="fx-mirror img-fluid">
+            <!--            <g transform="scale(1 -1) scale(1 .3) translate(-265 -1010)">-->
+            <!--                <use href="#compass-logo"></use>-->
+            <!--            </g>-->
+            <g>
+                <use href="#logo"></use>
+            </g>
+        </svg>
+        <h2>Experience, Excellence, Exceder</h2>
+        <p>
+            <strong style="font-family: BankGothic">Exceder</strong>&nbsp;&dash;&nbsp;(<em>Portuguese/Spanish; verb</em>)&nbsp;&dash;&nbsp;To
+            Excel
+        </p>
+        <p>
+            Exceder provides due diligence, underwriting, loan valuation and commercial real estate analysis to
+            loan originators, loan sellers, loan buyers, and CMBS investors.
+        </p>
+        <p>
+            Our Principals and Senior Consultants have an average of 25+ years of experience with all property
+            types nationwide.
+
+            Using our vast underwriting experience and knowledge, we excel at providing our clients with
+            insightful, cost-effective, time efficient, and professional analysis of commercial real estate
+            loans.
+        </p>
+        <p>
+            Experience and a commitment to excellence is the foundation of Exceder.
+        </p>
+    </div>
+</header>
+<main class="bg-secondary-subtle">
+    <div class="section-divider"></div>
+    <!--    <div class="text-center py-4">-->
+    <!--        <h1>Services and Experience</h1>-->
+    <!--    </div>-->
+    <!--CMBS-->
+    <section class="bg-body-tertiary" id="cmbs">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>CMBS</h2>
+                    <p class="lead">
+                        Our experience and knowledge provides prompt and cost-effective underwriting and loan analytics
+                        to CMBS investors.
+                    </p>
+                    <p>
+                        Exceder’s Senior Consultants have inspected and underwritten thousands of new issue and Legacy
+                        CMBS loans nationwide for both investment grade and B-piece CMBS investors.
+                    </p>
+                    <p> Exceder knows the questions to ask and the data sources to tap, allowing us to complete site
+                        inspections and market investigations in a timely and comprehensive manner.
+                        We identify any potential issues with properties or underwriting assumptions in a timely and
+                        professional manner.
+                    </p>
+                    <p>
+                        Our experience underwriting and valuing CMBS pools allows our Clients to make effective and
+                        timely investment decisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    <div class="section-divider"></div>-->
+    <!--Mezzanine-->
+    <section class="bg-body-secondary" id="mezzanine">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Mezzanine/High Yield Loans</h2>
+                    <p class="lead">
+                        Exceder provides complete Due Diligence and Loan Underwriting for Mezzanine/High Yield Lenders.
+                    </p>
+                    <p>
+                        Exceder's experience and knowledge provides Clients with a complete picture of the property,
+                        market, business plan, credit analysis, risks, mitigants, strengths and opportunities associated
+                        with the transaction.
+                    </p>
+                    <p>
+                        Our Scope of Work can include CAM reconciliation, review of Argus modeling assumptions,
+                        development of cash flow projections, site inspection, market investigation and preparation of
+                        credit approval memorandums.
+                    </p>
+                    <p>
+                        Exceder keeps a clear focus on approval and closing deadlines to ensure smooth completion of the
+                        transaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    <div class="section-divider"></div>-->
+    <!--Loan Portfolios-->
+    <section class="bg-body-tertiary" id="portfolios">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Loan Portfolios</h2>
+                    <p class="lead">
+                        Exceder provides Senior Level real estate underwriting and portfolio analysis experience to both
+                        sellers and buyers of Loan Portfolios.
+                    </p>
+                    <p>
+                        Exceder has developed processes and analytical tools that provide our clients with detailed and
+                        timely cost-effective results.
+                    </p>
+                    <p>
+                        Exceder uses portfolio stratifications and a preliminary valuation analysis to help define a
+                        focused scope of work and appropriate due diligence and underwriting process.
+                    </p>
+                    <p>
+                        Additional analysis of the portfolio through Exceder’s pricing analysis gives loan sellers a
+                        preliminary portfolio valuation to aid in a strategic assessment of the sale.
+                    </p>
+                    <p>
+                        Combining the underwriting results with Exceder's portfolio valuation analysis, we are able to
+                        generate multiple price/bid scenarios for portfolio buyers in a cost-effective manner.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    <div class="section-divider"></div>-->
+    <!--Structured Loans-->
+    <section class="bg-body-secondary" id="structured">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Structured Loans</h2>
+                    <p class="lead">
+                        Exceder has the experience required to analyze, underwrite, and value all components found in
+                        Structured Loans.
+                    </p>
+                    <p>
+                        From loans that have a simple A/B structure to loans with multiple levels of senior and
+                        subordinate debt, Structured Loans are a unique challenge to analyze, underwrite and value.
+                    </p>
+                    <p>
+                        Exceder’s Senior Underwriters have underwritten, analyzed, valued, and suggested multiple
+                        resolution strategies on all types of Structured Loans from single asset loans to loans secured
+                        by large, multi-state, multi-asset pools.
+                    </p>
+                    <p>
+                        Exceder's experience provides investors cost efficient and timely analysis of complex loan
+                        structures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+    <!--Consulting Services-->
+    <section class="bg-body-tertiary" id="services">
+        <div class="container px-4">
+            <div class="row gx-4 text-center">
+                <h1>Consulting Services</h1>
+            </div>
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <p class="lead">
+                        Exceder provides consulting services in all facets of real estate investment, lending, loan
+                        administration, and asset management.
+                    </p>
+                    <p>
+                        We have experience in many areas including equity investments, credit approval, loan work out,
+                        and loan review. Exceder provides a cost-effective solution for almost every commercial real
+                        estate need including:
+                    </p>
+                    <ul>
+                        <li>Equity Due Diligence</li>
+                        <li>Process Evaluation</li>
+                        <li>Underwriting Policies and Procedures</li>
+                        <li>Cash Modeling in Argus or Excel</li>
+                        <li>Loan Management</li>
+                        <li>Loan Review and Valuations</li>
+                        <li>Risk Assessment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+    <!--Case Studies-->
+    <section class="bg-body-tertiary" id="case-studies">
+        <div class="container px-4">
+            <div class="row gx-4 text-center">
+                <h1>Case Studies</h1>
+            </div>
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <!--                    <h2>Case Studies</h2>-->
+                    <p class="lead text-center">
+                        See the following case studies on recent engagements completed by Exceder
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="col d-flex">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center align-self-start justify-content-center fs-4 flex-shrink-0 me-3">
+                        <i class="bi-toggles2"></i>
+                    </div>
+                    <div class="d-grid">
+                        <div class="align-self-start">
+                            <h3 class="fs-2">CMBS B-Piece</h3>
+                            <p>
+                                New Issue CMBS pool. Loans included a crossed portfolio of 20+ properties that were all
+                                the same asset classification.
+                            </p>
+                            <p>
+                                Client was seeking a cost effective method to analyze the crossed loan. All other loans
+                                secured by single properties. Collateral type included hotel, regional mall,
+                                multi-family, office, manufactured housing and retail.
+                            </p>
+                        </div>
+                        <div class="align-self-end text-center d-grid gap-2">
+                            <a href="#" class="btn btn-primary">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center align-self-start justify-content-center fs-4 flex-shrink-0 me-3">
+                        <i class="bi-cpu-fill"></i>
+                    </div>
+                    <div class="d-grid">
+                        <div class="align-self-start">
+                            <h3 class="fs-2">Portfolio Acquisition</h3>
+                            <p>
+                                310 loans with an outstanding balance of $440 million; mix of performing and
+                                non-performing bank loans; collateral included churches, land, residential lots,
+                                industrial, multi-family, motels, commercial and retail uses; average loan size $1.4
+                                million.
+                            </p>
+                        </div>
+                        <div class="align-self-end text-center d-grid gap-2">
+                            <a href="#" class="btn btn-primary">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center align-self-start justify-content-center fs-4 flex-shrink-0 me-3">
+                        <i class="bi-tools"></i>
+                    </div>
+                    <div class="d-grid">
+                        <div class="align-self-start">
+                            <h3 class="fs-2">Mezzanine Loan</h3>
+                            <p>
+                                Seven building Class A-/B office portfolio in a core market. Portfolio required
+                                significant TI and re-positioning. Client was providing sub-mezzanine debt with a base
+                                funding and future funding allowed upon lease up of the project. Entire capital stack of
+                                $210 million at closing with earn out to $238 million.
+                            </p>
+                        </div>
+                        <div class="align-self-end text-center d-grid gap-2">
+                            <a href="#" class="btn btn-primary">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+    <!--About-->
+    <section class="bg-body-tertiary" id="about">
+        <div class="container px-4">
+            <div class="row gx-4 text-center">
+                <h1>About Us</h1>
+            </div>
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <p class="lead">
+                        Exceder Real Estate Advisors, LLC is an independent, third-party commercial real estate
+                        underwriting and consulting firm.
+                    </p>
+                    <p>
+                        We believe in providing the highest quality, detailed, professional and cost-effective solutions
+                        to our clients. We always deliver projects on-time and on-budget. We work collaboratively with
+                        our clients to develop an appropriate and valuable Scope of Work that addresses their needs.
+                    </p>
+                    <p>
+                        Exceder is a team of Senior Underwriters with real estate lending backgrounds for commercial
+                        banks, life companies, private equity and CMBS conduits.
+                    </p>
+                    <p>
+                        In addition to their exceptional underwriting and analysis skills, the team also has extensive
+                        experience in loan originations, asset management, investment sales brokerage, leasing, and loan
+                        workouts.
+                    </p>
+                    <p>
+                        We have underwritten loans on all types of commercial real estate including hotels, health care,
+                        office, industrial, retail, multi-family, golf courses, condominiums, parking facilities,
+                        residential land developments, commercial land developments and mixed use entertainment venues.
+                    </p>
+                    <p>
+                        Exceder's experience includes underwriting and analyzing loans and properties in all 50 states,
+                        Puerto Rico and the Caribbean.
+                    </p>
+                    <p>
+                        Exceder has Senior Underwriters located across the country in all major metro areas. This allows
+                        us to offer our expertise nationwide and efficiently manage travel costs.
+                    </p>
+                    <p>
+                        Since its founding in May 2010, Exceder has reviewed, analyzed, underwritten and valued
+                        thousands of loans with an aggregate principal balance in excess of $100 billion.
+                    </p>
+                </div>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasPartners" aria-controls="offcanvasPartners">
+                            Meet The Partners
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+    <div class="offcanvas h-auto offcanvas-bottom" tabindex="-1" id="offcanvasPartners"
+         aria-labelledby="offcanvasPartnerLabel" style="max-height: 75%">
+        <div class="container-fluid">
+            <div class="row d-flex align-self-center">
+                <div class="col-12 mx-auto">
+                    <div class="offcanvas-header">
+                        <h2 class="offcanvas-title w-100 text-center" id="offcanvasPartnerLabel">Managing Partners</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            <!--            <div class="row gx-4 text-center">-->
+            <!--                <div class="col-1"></div>-->
+            <!--                <div class="col-10">-->
+            <!--                    <p class="lead w-100 text-center">Click a portrait to read partner's bio</p>-->
+            <!--                </div>-->
+            <!--                <div class="col-1"></div>-->
+            <!--            </div>-->
+        </div>
+        <div class="offcanvas-body">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-3 w-auto px-4">
+                        <a data-bs-toggle="offcanvas"
+                           data-bs-target="#ocPhil" aria-controls="ocPhil">
+                            <figure class="figure" style="max-width: 250px;">
+                                <img class="rounded-circle figure-img img-thumbnail center-cropped"
+                                     src="/assets/images/Gonsalves100.png">
+                                <figcaption class="figure-caption"><h4>Philip Gonsalves</h4></figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- Force next columns to break to new line below md breakpoint -->
+                    <div class="w-100 d-block d-md-none"></div>
+                    <div class="col-3 w-auto px-4">
+
+                        <figure class="figure" style="max-width: 250px;">
+                            <img class="rounded-circle figure-img img-thumbnail"
+                                 src="https://dummyimage.com/500/d3d3d3/fff.png">
+                            <figcaption class="figure-caption"><h4>New Partner</h4></figcaption>
+                        </figure>
+                    </div>
+                    <!-- Force next columns to break to new line below md breakpoint -->
+                    <div class="w-100 d-block d-md-none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TODO - Add Back Button to Partner offcanvas -->
+    <div class="offcanvas h-100 offcanvas-bottom" tabindex="-2" id="ocPhil"
+         aria-labelledby="ocPhilLabel">
+        <div class="offcanvas-header bg-gradient bg-exceder">
+            <svg role="img" stroke="#fff" stroke-opacity=".5" stroke-width=".5" height="69" width="69">
+                <use href="#compass-logo"></use>
+            </svg>
+            <h4 class="offcanvas-title" id="ocPhilLabel">Philip Gonsalves</h4>
+            <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPartners"
+                    aria-controls="offcanvasPartners" aria-labelledby="Back" style="color: #fff;">
+                <i class="bi-arrow-return-left">&nbsp;Back</i>
+            </button>
+            <!--            <button type="button" class=" btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
+        </div>
+        <div class="offcanvas-body">
+            <p>
+                Philip Gonsalves is the founder and Managing Partner of Exceder Real Estate Advisors,
+                LLC, an independent third-party commercial real estate underwriting, due diligence and
+                consulting firm. Phil has over 30 years of commercial real estate underwriting, analysis
+                and valuation experience.
+            </p>
+            <p>
+                Over the course of his career, Phil has managed hundreds of engagements for various
+                clients including projects for investment banks, commercial banks, private equity real
+                estate funds and various other commercial real estate debt investors.
+            </p>
+            <p>
+                He has provided loan valuation, strategic analysis and consulting services to portfolio
+                lenders and CMBS investors, as well as directly underwriting numerous loans for the CMBS
+                market.
+            </p>
+            <p>
+                Phil has extensive experience analyzing all types of commercial real estate and debt
+                including mezzanine loans and highly structured, multi-tranche transactions.
+            </p>
+            <p>
+                Prior to founding Exceder, Phil was with McCary Stevens Associates, Inc. for over 10
+                years as a Senior Project Manager and Principal providing loan underwriting, due
+                diligence and commercial real estate consulting services. Prior to McCary Stevens, he
+                worked on CMBS loan origination and underwriting for QuestCap and Paine Webber.
+            </p>
+            <p>
+                Phil also has commercial banking experience with CenterBank as a Vice President in the
+                Credit Administration Department and with RECOLL Management/Fleet Financial Group as
+                Vice President and Manager of the appraisal and valuation department in Hartford, CT.
+                RECOLL was responsible for working out loans for the FDIC related to failure of Bank of
+                New England. Phil’s commercial real estate career started with a regional commercial
+                appraisal firm in 1985.
+            </p>
+            <p>
+                Phil is a graduate of Boston College with a Bachelor of Arts degree in History.
+            </p>
+        </div>
+    </div>
+    <!--    <div class="offcanvas w-75 offcanvas-end" tabindex="-1" id="offcanvasPartners"-->
+    <!--         aria-labelledby="offcanvasLabel">-->
+    <!--        <div class="offcanvas-header">-->
+    <!--            <h5 class="offcanvas-title" id="offcanvasLabel">Managing Partners</h5>-->
+    <!--            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
+    <!--        </div>-->
+    <!--        <div class="offcanvas-body">-->
+    <!--            <div class="accordion" id="partnerAccordion">-->
+    <!--                <div class="accordion-item">-->
+    <!--                    <span class="accordion-header" id="headingOne">-->
+    <!--                        <button class="accordion-button" type="button" data-bs-toggle="collapse"-->
+    <!--                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
+    <!--                            <div class="col-sm-4 col-md-1">-->
+    <!--                                <img class="rounded-circle img-fluid"-->
+    <!--                                     src="https://dummyimage.com/500/d3d3d3/fff.png">-->
+    <!--                            </div>-->
+    <!--                            <div class="col-8 px-4">-->
+    <!--                                <h4>Philip Gonsalves</h4>-->
+    <!--                                <span>(860) 875-8383</span>-->
+    <!--                                <span><a href="mailto:phil@excederrea.com">phil@excederrea.com</a></span>-->
+    <!--                            </div>-->
+    <!--                        </button>-->
+    <!--                    </span>-->
+    <!--                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"-->
+    <!--                         data-bs-parent="#partnerAccordion">-->
+    <!--                        <div class="accordion-body">-->
+    <!--                            <p>-->
+    <!--                                Philip Gonsalves is the founder and Managing Partner of Exceder Real Estate Advisors,-->
+    <!--                                LLC, an independent third-party commercial real estate underwriting, due diligence and-->
+    <!--                                consulting firm. Phil has over 30 years of commercial real estate underwriting, analysis-->
+    <!--                                and valuation experience.-->
+    <!--                            </p>-->
+    <!--                            <p>-->
+    <!--                                Over the course of his career, Phil has managed hundreds of engagements for various-->
+    <!--                                clients including projects for investment banks, commercial banks, private equity real-->
+    <!--                                estate funds and various other commercial real estate debt investors.-->
+    <!--                            </p>-->
+    <!--                            <p>-->
+    <!--                                He has provided loan valuation, strategic analysis and consulting services to portfolio-->
+    <!--                                lenders and CMBS investors, as well as directly underwriting numerous loans for the CMBS-->
+    <!--                                market.-->
+    <!--                            </p>-->
+    <!--                            <p>-->
+    <!--                                Phil has extensive experience analyzing all types of commercial real estate and debt-->
+    <!--                                including mezzanine loans and highly structured, multi-tranche transactions.-->
+    <!--                            </p>-->
+    <!--                            <p>-->
+    <!--                                Prior to founding Exceder, Phil was with McCary Stevens Associates, Inc. for over 10-->
+    <!--                                years as a Senior Project Manager and Principal providing loan underwriting, due-->
+    <!--                                diligence and commercial real estate consulting services. Prior to McCary Stevens, he-->
+    <!--                                worked on CMBS loan origination and underwriting for QuestCap and Paine Webber.-->
+    <!--                            </p>-->
+    <!--                            <p>-->
+    <!--                                Phil also has commercial banking experience with CenterBank as a Vice President in the-->
+    <!--                                Credit Administration Department and with RECOLL Management/Fleet Financial Group as-->
+    <!--                                Vice President and Manager of the appraisal and valuation department in Hartford, CT.-->
+    <!--                                RECOLL was responsible for working out loans for the FDIC related to failure of Bank of-->
+    <!--                                New England. Phil’s commercial real estate career started with a regional commercial-->
+    <!--                                appraisal firm in 1985.-->
+    <!--                            </p>-->
+    <!--                            <p>-->
+    <!--                                Phil is a graduate of Boston College with a Bachelor of Arts degree in History.-->
+    <!--                            </p>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="accordion-item">-->
+    <!--                    <h2 class="accordion-header" id="headingTwo">-->
+    <!--                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"-->
+    <!--                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
+    <!--                            <div class="col-sm-4 col-md-1">-->
+    <!--                                <img class="rounded-circle img-fluid"-->
+    <!--                                     src="https://dummyimage.com/500/d3d3d3/fff.png">-->
+    <!--                            </div>-->
+    <!--                            <div class="col-8 px-4">-->
+    <!--                                <h4>Other Partner</h4>-->
+    <!--                                <span>(123) 456-7890</span>-->
+    <!--                                <span><a href="mailto:phil@excederrea.com">phil@excederrea.com</a></span>-->
+    <!--                            </div>-->
+    <!--                        </button>-->
+    <!--                    </h2>-->
+    <!--                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"-->
+    <!--                         data-bs-parent="#partnerAccordion">-->
+    <!--                        <div class="accordion-body">-->
+    <!--                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until-->
+    <!--                            the collapse plugin adds the appropriate classes that we use to style each element. These-->
+    <!--                            classes control the overall appearance, as well as the showing and hiding via CSS-->
+    <!--                            transitions. You can modify any of this with custom CSS or overriding our default variables.-->
+    <!--                            It's also worth noting that just about any HTML can go within the-->
+    <!--                            <code>.accordion-body</code>, though the transition does limit overflow.-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+</main>
+<!-- Footer-->
+<footer class="py-5" style="background-color: #820000">
+    <div class="container px-4">
+        <div class="row">
+            <svg role="img" class="mx-auto" stroke="#fff" stroke-opacity=".5" stroke-width=".5" height="69" width="69">
+                <use href="#compass-logo"></use>
+            </svg>
+        </div>
+
+        <p class="m-0 text-center text-white">
+            Copyright &copy; Exceder Real Estate Advisors, LLC 2023
+        </p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/ScrollinOnePage.js"></script>
+</body>
+</html>
