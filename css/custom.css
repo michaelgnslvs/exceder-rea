@@ -26,6 +26,10 @@
     color: #fff !important;
 }
 
+.bg-exceder > .btn-close {
+    color: magenta;
+}
+
 .btn-primary {
     --bs-btn-bg: #820000;
     --bs-btn-border-color: #820000;

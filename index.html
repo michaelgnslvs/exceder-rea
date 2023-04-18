@@ -124,7 +124,11 @@
         <path stroke="#000" stroke-opacity=".5" stroke-width=".2"
               d="m26.802-2.8376-5.9562 15.127a4.3418 7.1877 67.546 0 1 1.8769-0.39171l4.0793-14.736zm8.8635 7.8905-10.045 7.0161a4.3418 7.1877 67.546 0 1 0.97823 0.37827l9.0671-7.3944zm-22.804 2.5601 4.3605 6.5061a4.3418 7.1877 67.546 0 1 1.0764-0.72502l-5.4369-5.781zm30.034 6.6632-14.706 0.17208a4.3418 7.1877 67.546 0 1-0.093535 1.4893l14.799-1.6614zm-28.198 3.1657-14.799 1.6614 14.705-0.17157a4.3418 7.1877 67.546 0 1 0.093534-1.4898zm10.878 1.8247a4.3418 7.1877 67.546 0 1-1.079 0.71985l5.4353 5.7805-4.3563-6.5004zm-9.3808 1.665-9.0671 7.3954 10.045-7.0171a4.3418 7.1877 67.546 0 1-0.97824-0.37827zm5.7506 0.16485a4.3418 7.1877 67.546 0 1-1.8774 0.39222l-4.0768 14.728 5.9542-15.121z"
               fill="#fff"/>
-        <text transform="scale(.89666 1.1152)" x="50.740181" y="18.642" fill="currentColor" font-family="'BankGothic'" font-size="17.82px" stroke-width="1.485" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Exceder</text>
+        <text transform="scale(.89666 1.1152)" x="50.740181" y="18.642" fill="currentColor" font-family="'BankGothic'"
+              font-size="17.82px" stroke-width="1.485"
+              style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+            Exceder
+        </text>
         <text transform="scale(.87375 1.1445)" x="53.634624" y="23.529253" fill="currentColor"
               font-family="'BankGothic'" font-size="6.4255px" stroke-linecap="round" stroke-linejoin="round"
               stroke-width=".53546"
@@ -438,7 +442,7 @@
                         <div class="align-self-end text-center d-grid gap-2">
                             <a data-bs-toggle="offcanvas" data-bs-target="#ocCaseStudy1" aria-controls="ocCaseStudy1"
                                class="btn btn-primary">
-                                Primary button
+                                See Details
                             </a>
                         </div>
                     </div>
@@ -458,8 +462,9 @@
                             </p>
                         </div>
                         <div class="align-self-end text-center d-grid gap-2">
-                            <a href="#" class="btn btn-primary">
-                                Primary button
+                            <a data-bs-toggle="offcanvas" data-bs-target="#ocCaseStudy2" aria-controls="ocCaseStudy2"
+                               class="btn btn-primary">
+                                See Details
                             </a>
                         </div>
                     </div>
@@ -479,8 +484,9 @@
                             </p>
                         </div>
                         <div class="align-self-end text-center d-grid gap-2">
-                            <a href="#" class="btn btn-primary">
-                                Primary button
+                            <a data-bs-toggle="offcanvas" data-bs-target="#ocCaseStudy3" aria-controls="ocCaseStudy3"
+                               class="btn btn-primary">
+                                See Details
                             </a>
                         </div>
                     </div>
@@ -552,13 +558,17 @@
     <!-- Offcanvas Blocks -->
     <!-- Case Studies Offcanvas: CMBS -->
     <div class="offcanvas h-auto offcanvas-bottom" tabindex="-1" id="ocCaseStudy1"
-         aria-labelledby="ocCMBS" style="max-height: 75%">
+         aria-labelledby="ocCMBS">
         <div class="container-fluid">
             <div class="row d-flex align-self-center">
-                <div class="col-12 mx-auto">
-                    <div class="offcanvas-header">
+                <div class="col-12 w-100 m-0 p-0">
+                    <div class="offcanvas-header bg-exceder w-100">
+                        <svg role="img" stroke="#000" stroke-opacity=".5" stroke-width="1" height="69" width="69">
+                            <use href="#compass-logo"></use>
+                        </svg>
                         <h2 class="offcanvas-title w-100 text-center" id="ocCMBS">
-                            Managing Partners</h2>
+                            Case Study: CMBS B-Piece
+                        </h2>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                     </div>
@@ -566,33 +576,108 @@
             </div>
         </div>
         <div class="offcanvas-body">
-            <div class="container text-center">
-                <div class="row justify-content-center">
-                    <div class="col-3 w-auto px-4">
-                        <a data-bs-toggle="offcanvas"
-                           data-bs-target="#ocPhil" aria-controls="ocPhil">
-                            <figure class="figure" style="max-width: 250px;">
-                                <img class="rounded-circle figure-img img-thumbnail"
-                                     src="https://dummyimage.com/500/d3d3d3/fff.png">
-                                <!--                                <img class="rounded-circle figure-img img-thumbnail center-cropped"-->
-                                <!--                                     src="/assets/images/Gonsalves100.png">-->
-                                <figcaption class="figure-caption"><h4>Philip Gonsalves</h4>
-                                </figcaption>
-                            </figure>
-                        </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="container-fluid">
+                            <div class="p-2 my-2 bg-body-secondary rounded-3">
+                                <h5 class="text-body-emphasis">Client</h5>
+                                <p class="mx-4">
+                                    B-Piece Investor
+                                </p>
+                                <h5 class="text-body-emphasis">Deliverable/Timing:</h5>
+                                <p class="mx-4">
+                                    Client’s underwriting model - 21 days
+                                </p>
+                                <h5 class="text-body-emphasis">Results</h5>
+                                <p class="mx-4">
+                                    Project was delivered commencing day 14 and 100% complete by day 20
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <!-- Force next columns to break to new line below md breakpoint -->
                     <div class="w-100 d-block d-md-none"></div>
-                    <div class="col-3 w-auto px-4">
-
-                        <figure class="figure" style="max-width: 250px;">
-                            <img class="rounded-circle figure-img img-thumbnail"
-                                 src="https://dummyimage.com/500/d3d3d3/fff.png">
-                            <figcaption class="figure-caption"><h4>New Partner</h4></figcaption>
-                        </figure>
+                    <div class="col">
+                        <div class="container-fluid">
+                            <div class="p-2 my-2 bg-body-tertiary rounded-3">
+                                <div class="row justify-content-start">
+                                    <h5 class="text-body-emphasis">Project:</h5>
+                                    <p>
+                                        New Issue CMBS pool.
+                                    </p>
+                                    <p>
+                                        Loans included a crossed portfolio of 20+ properties that were all the same
+                                        asset classification. Client was seeking a cost effective method to analyze the
+                                        crossed loan. All other loans secured by single properties. Collateral type
+                                        included hotel, regional mall, multi-family, office, manufactured housing and
+                                        retail.
+                                    </p>
+                                </div>
+                                <div class="row justify-content-start">
+                                    <h5 class="text-body-emphasis">Exceder Scope of Work:</h5>
+                                </div>
+                                <div class="row mx-4">
+                                    <strong>Standard single property loans:</strong>
+                                    <ul class="mx-4">
+                                        <li>Reviewed all property level data, third party reports and Issuer Asset
+                                            Summary
+                                            Reports (ASR).
+                                        </li>
+                                        <li>Compiled published market studies from various sources.</li>
+                                        <li>Interviewed local sale and leasing brokers for market color, leasing and
+                                            sales
+                                            trends and comparable data.
+                                        </li>
+                                        <li>Developed sale rental comparables not included in the appraisal.</li>
+                                        <li>Completed site inspections including photographing sale and rental
+                                            comparables.
+                                        </li>
+                                        <li>Identified property level issues/questions/data requests and submit to
+                                            Client and
+                                            Issuer.
+                                        </li>
+                                        <li>Developed an underwritten Net Cash Flow and underwritten Value based on all
+                                            available property, loan and market data.
+                                        </li>
+                                        <li>Reconciled major differences between Exceder’s underwritten cash flow and
+                                            value to
+                                            the Issuer/Appraiser’s conclusions.
+                                        </li>
+                                        <li>Verified loan terms as outlined in ASRs with Loan Documents as loans
+                                            closed.
+                                        </li>
+                                        <li>Complete Client’s model.</li>
+                                        <li>Participated in a roll-up call where each loan, property and Exceder’s
+                                            underwriting
+                                            was discussed.
+                                        </li>
+                                        <li>Crossed Portfolio.</li>
+                                        <li>Identified the critical properties in the portfolio (highest allocated loan
+                                            balance;
+                                            highest Issuer DSCR’s; highest LTV; highest loan PSF; etc)
+                                        </li>
+                                        <li>Reviewed all property level data, third party reports and Issuer ASRs for
+                                            all
+                                            properties.
+                                        </li>
+                                        <li>Compiled published market studies from various sources.</li>
+                                        <li>Developed sale and rent comparables for the critical properties.</li>
+                                        <li>Completed site inspection of critical properties.</li>
+                                        <li>Developed and completed a modified underwriting model with a concluded
+                                            underwritten
+                                            NCF and Value for each property in the portfolio based on market data.
+                                        </li>
+                                        <li>Roll-up of the individual conclusions to a portfolio level.</li>
+                                        <li>Modified process saved the client 50% of the cost of the standard
+                                            underwriting
+                                            process for the portfolio.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Force next columns to break to new line below md breakpoint -->
-                    <div class="w-100 d-block d-md-none"></div>
                 </div>
             </div>
         </div>
@@ -603,10 +688,16 @@
          aria-labelledby="offcanvasPartnerLabel" style="max-height: 75%">
         <div class="container-fluid">
             <div class="row d-flex align-self-center">
-                <div class="col-12 mx-auto">
-                    <div class="offcanvas-header">
-                        <h2 class="offcanvas-title w-100 text-center" id="offcanvasPartnerLabel">Managing Partners</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="col-12 w-100 m-0 p-0">
+                    <div class="offcanvas-header bg-exceder w-100">
+                        <svg role="img" stroke="#000" stroke-opacity=".5" stroke-width="1" height="69"
+                             width="69">
+                            <use href="#compass-logo"></use>
+                        </svg>
+                        <h2 class="offcanvas-title w-100 text-center" id="offcanvasPartnerLabel">Managing
+                            Partners</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                     </div>
                 </div>
             </div>
@@ -642,6 +733,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Phil -->
     <div class="offcanvas h-100 offcanvas-bottom" tabindex="-2" id="ocPhil"
          aria-labelledby="ocPhilLabel">
         <div class="offcanvas-header bg-exceder">
@@ -656,7 +749,8 @@
         </div>
         <div class="offcanvas-body">
             <p>
-                <strong>Philip Gonsalves</strong> is the founder and Managing Partner of Exceder Real Estate Advisors,
+                <strong>Philip Gonsalves</strong> is the founder and Managing Partner of Exceder Real Estate
+                Advisors,
                 LLC, an independent third-party commercial real estate underwriting, due diligence and
                 consulting firm. Phil has over 30 years of commercial real estate underwriting, analysis
                 and valuation experience.
