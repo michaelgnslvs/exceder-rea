@@ -75,3 +75,28 @@ h1, h2, h3, h4, h5, h6 {
     height: 1em;
     width: 1em;
 }
+
+.banner-exceder {
+    background-image:
+            linear-gradient(to bottom, #62000025, #620000dd),
+            url('../assets/images/hartford.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-exceder-hero {
+    background: #000000b0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.oc-about {
+    background-size: cover;
+    background: url('../assets/images/bg-about-us.jpg') top;
+}
+
+.oc-employee {
+    background: #ffffffdd;
+    border-radius:10px;
+    border: 2px solid #00000055;
+}
